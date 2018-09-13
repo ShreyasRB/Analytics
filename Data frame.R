@@ -67,6 +67,6 @@ aggregate(cbind(marks1,marks2)~gender+batch,data=df,FUN=mean)  #Organises by bat
 ?as.character
 df
 write.csv(df,"./data/bitsgoa.csv")
-
-
+d3=read.csv("./data/bitsgoa.csv")
+d3
 
