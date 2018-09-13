@@ -4,12 +4,19 @@ library(amap)
 library(dplyr)  #For loading package for using
 mtcars
 
-mtcars %>% group_by(gear) %>% summarise(mean(mpg),max(mpg))
+mtcars %>% group_by(gear) %>% summarise(mean(mpg),max(mpg)) #WIll show only specified tables when summarise is used instead of summarise_all
 
 
 mtcars %>% group_by(gear) %>% summarise_all(mean)
-mtcars %>% group_by(gear) %>% summarise_all(max)  #For displaying what gears have mpg>25
+mtcars %>% group_by(gear) %>% summarise_all(max)  
 
-mtcars %>% group_by(mpg,gear) %>% summarise(max(mpg)>25)
 ?summarise
 mtcars %>% select(mpg,gear) %>% filter(mpg>25)
+
+mtcars %>% group_by(gear) %>% summarise_if(is.numeric,mean) #Will summarise by mean if value is numeric in value
+
+sales %>% group_by(region) %>% summarise_if(is.numeric,mean) #Displays mean of all unique regions if numeric in value
+
+?is.numeric
+
+sales %>% group_by(region)
