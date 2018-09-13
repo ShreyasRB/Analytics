@@ -88,3 +88,4 @@ gender2
 ?sample
 table(gender2)
 prop.table(table(gender2))
+table(gender2)
