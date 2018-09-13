@@ -20,3 +20,11 @@ sales %>% group_by(region) %>% summarise_if(is.numeric,mean) #Displays mean of a
 ?is.numeric
 
 sales %>% group_by(region)
+?count
+mtcars %>% group_by(gear) %>% summarise(n=n()) #Used to show no.of units in given group by topic
+
+?head
+mtcars %>% group_by(gear)
+
+mtcars %>% group_by(gear) %>% summarise(TotalMiles=sum(mpg)) #Will show total miles covered by certain gear
+
