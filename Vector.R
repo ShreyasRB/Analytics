@@ -89,3 +89,9 @@ gender2
 table(gender2)
 prop.table(table(gender2))
 table(gender2)
+
+?factor
+
+
+
+

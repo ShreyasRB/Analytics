@@ -69,4 +69,6 @@ df
 write.csv(df,"./data/bitsgoa.csv")
 d3=read.csv("./data/bitsgoa.csv")
 d3
-
+?head
+?table
+?sort
