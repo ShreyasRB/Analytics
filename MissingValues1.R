@@ -63,7 +63,7 @@ mice::md.pattern(sleep)
 
 #Visualisation
 VIM::aggr(sleep, prop=F, numbers=T)
-#NonD max NA values 
+#NonD max NA values
 VIM::aggr(sleep, prop=T)  # Proportion
 VIM::matrixplot(sleep) # rowno and missing values in red
 VIM::marginmatrix(sleep)
