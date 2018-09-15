@@ -91,6 +91,6 @@ summary(lm(mpg ~ wt+ hp, data=mtcars))
 
 
 
-#sales vs price & promotion
+
 
 
