@@ -33,3 +33,4 @@ rpart.plot(ptree3)
 #Predict the class for any sample value
 library(dplyr)
 (ndata=sample_n(df,3))
+predict(ptree3, newdata=ndata,type='class')
